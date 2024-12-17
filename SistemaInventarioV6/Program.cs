@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using SistemaInventarioV6.Data;
+using SistemaInventarioV6.AccesoDatos.Data;
 
 namespace SistemaInventarioV6
 {
@@ -44,7 +44,7 @@ namespace SistemaInventarioV6
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{area=Inventario}/{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
 
             app.Run();
