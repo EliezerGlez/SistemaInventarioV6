@@ -1,0 +1,10 @@
+﻿# Ignorar archivos generados por Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.vsidx
+*.db
+
+
